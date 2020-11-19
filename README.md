@@ -16,9 +16,9 @@ Template based on the standard Dokuwiki-Template
 * Configurable slider for an external link
 * Content-Area can be set to transparent for the initial ``start``-Page
 
-![](images/screenshots/screenshot1.png)
+![](images/screenshots/screenshot3.png)
 
-![](images/screenshots/screenshot2.png)
+![](images/screenshots/screenshot4.png)
 
 
 ## Compatibility
