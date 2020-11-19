@@ -23,7 +23,7 @@ if (!defined('DOKU_INC')) die();
             // get logo either out of the template images folder or data/media folder
             $logoSize = array();
             $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
-			if ($conf['tpl']['dokuwiki_kkh']['logo_image'] != "") $logo = DOKU_URL."lib/exe/fetch.php?media=".$conf['tpl']['dokuwiki_kkh']['logo_image'];
+			if ($conf['tpl']['kkh']['logo_image'] != "") $logo = DOKU_URL."lib/exe/fetch.php?media=".$conf['tpl']['kkh']['logo_image'];
 
             // display logo and wiki title in a link to the home page
             tpl_link(

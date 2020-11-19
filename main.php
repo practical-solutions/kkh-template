@@ -17,8 +17,8 @@ $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
 
 # Default Values
-if ($conf['tpl']['dokuwiki_kkh']['color background'] == '') $conf['tpl']['dokuwiki_kkh']['color background'] = "#eeeeee";
-if ($conf['tpl']['dokuwiki_kkh']['color header'] == '') $conf['tpl']['dokuwiki_kkh']['color header'] = "#aaaaaa";
+if ($conf['tpl']['kkh']['color background'] == '') $conf['tpl']['kkh']['color background'] = "#eeeeee";
+if ($conf['tpl']['kkh']['color header'] == '') $conf['tpl']['kkh']['color header'] = "#aaaaaa";
 
 ?><!DOCTYPE html>
 
@@ -40,20 +40,20 @@ if ($conf['tpl']['dokuwiki_kkh']['color header'] == '') $conf['tpl']['dokuwiki_k
 	<link rel="stylesheet" type="text/css" href="<?php echo tpl_basedir(); ?>/css/kkh.css">
     <style>
     html {
-        <?php if (isset($conf['tpl']['dokuwiki_kkh']['color background'])) echo "background: ".$conf['tpl']['dokuwiki_kkh']['color background'].";";?>
+        <?php if (isset($conf['tpl']['kkh']['color background'])) echo "background: ".$conf['tpl']['kkh']['color background'].";";?>
     }
     
     #dokuwiki__header {
-        box-shadow: 0 40px 0px 0 <?php echo $conf['tpl']['dokuwiki_kkh']['color header']?>;
-        background-color: <?php echo $conf['tpl']['dokuwiki_kkh']['color header']?>;
+        box-shadow: 0 40px 0px 0 <?php echo $conf['tpl']['kkh']['color header']?>;
+        background-color: <?php echo $conf['tpl']['kkh']['color header']?>;
         
     }
     
     #dokuwiki__content h1{
-        background-color:<?php echo $conf['tpl']['dokuwiki_kkh']['color h1']?> !important;
+        background-color:<?php echo $conf['tpl']['kkh']['color h1']?> !important;
     }
     
-    <?php if ($conf['tpl']['dokuwiki_kkh']['transparent start']===1): ?>
+    <?php if ($conf['tpl']['kkh']['transparent start']===1): ?>
     /* Elemente auf Startseite ausblenden */
     .home .docInfo, .home .pageId, .home #dokuwiki__pagetools {display:none !important;}
 
@@ -84,20 +84,20 @@ if ($conf['tpl']['dokuwiki_kkh']['color header'] == '') $conf['tpl']['dokuwiki_k
 	<?php if(strpos(tpl_classes(),'mode_show') !== false): ?>
 	<?php 
 	# Set defaults
-	if (!isset($conf['tpl']['dokuwiki_kkh']['logo_image']) || $conf['tpl']['dokuwiki_kkh']['logo_image']=='') $conf['tpl']['dokuwiki_kkh']['logo_image'] = "wiki:logo.png";
+	if (!isset($conf['tpl']['kkh']['logo_image']) || $conf['tpl']['kkh']['logo_image']=='') $conf['tpl']['kkh']['logo_image'] = "wiki:logo.png";
     
 	# Check if configured loader image exists. Otherwise: Use standard image of the template
-    $loader_img = DOKU_INC.'data/media/'.str_replace(':','/',$conf['tpl']['dokuwiki_kkh']['loader_image']);
-    if (!isset($conf['tpl']['dokuwiki_kkh']['loader_image']) || 
-        $conf['tpl']['dokuwiki_kkh']['loader_image']=='' ||
+    $loader_img = DOKU_INC.'data/media/'.str_replace(':','/',$conf['tpl']['kkh']['loader_image']);
+    if (!isset($conf['tpl']['kkh']['loader_image']) || 
+        $conf['tpl']['kkh']['loader_image']=='' ||
         !file_exists($loader_img)
        ) {$loader_img = tpl_basedir().'images/loader.gif';} else
-         {$loader_img = 'lib/exe/fetch.php?media='.$conf['tpl']['dokuwiki_kkh']['loader_image'];}
+         {$loader_img = 'lib/exe/fetch.php?media='.$conf['tpl']['kkh']['loader_image'];}
 	?>
 	<div class="branding">
-		<img class="logo" src="lib/exe/fetch.php?media=<?php echo $conf['tpl']['dokuwiki_kkh']['logo_loader']; ?>"> 
+		<img class="logo" src="lib/exe/fetch.php?media=<?php echo $conf['tpl']['kkh']['logo_loader']; ?>"> 
 		<img class="loader" src="<?php echo $loader_img ?>">
-		<span><?php if ($conf['tpl']['dokuwiki_kkh']['show_title']===1) echo $conf['title']; ?></span>
+		<span><?php if ($conf['tpl']['kkh']['show_title']===1) echo $conf['title']; ?></span>
 	</div>
 	<?php endif; ?>
 	<!------------------------->
@@ -173,11 +173,11 @@ if ($conf['tpl']['dokuwiki_kkh']['color header'] == '') $conf['tpl']['dokuwiki_k
     <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>
     <div id="screen__mode" class="no"></div><?php /* helper to detect CSS media query in script.js */ ?>
         
-    <?php if ($conf['tpl']['dokuwiki_kkh']['slider show']): ?>
+    <?php if ($conf['tpl']['kkh']['slider show']): ?>
     <!-- Slider -->
 	<div class="rightslider" style="top:300px;background:white;">
 		<div class="rightslider_toggle"><img src="<?php echo tpl_basedir(); ?>images/external_link.png"></div>
-		<div class="kkh_box"><a href="<?php echo $conf['tpl']['dokuwiki_kkh']['slider link']; ?>"><?php echo $conf['tpl']['dokuwiki_kkh']['slider text'];?></a></div>	
+		<div class="kkh_box"><a href="<?php echo $conf['tpl']['kkh']['slider link']; ?>"><?php echo $conf['tpl']['kkh']['slider text'];?></a></div>	
 	</div>
     <?php endif; ?>
     
