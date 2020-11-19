@@ -15,6 +15,11 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
+
+# Default Values
+if ($conf['tpl']['dokuwiki_kkh']['color background'] == '') $conf['tpl']['dokuwiki_kkh']['color background'] = "#eeeeee";
+if ($conf['tpl']['dokuwiki_kkh']['color header'] == '') $conf['tpl']['dokuwiki_kkh']['color header'] = "#aaaaaa";
+
 ?><!DOCTYPE html>
 
 <html style="overflow-x:hidden;" lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">

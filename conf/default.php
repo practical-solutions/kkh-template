@@ -1,7 +1,7 @@
 <?php
 
-$conf['logo_image']   = 'wiki:logo';
-$conf['logo_loader']  = 'wiki:logo';
+$conf['logo_image']   = '';
+$conf['logo_loader']  = '';
 $conf['loader_image'] = '';
 $conf['show_title']	  = 0; # Titel in der Ladeanmiation anzeigen
 
@@ -12,6 +12,6 @@ $conf['slider link']  = "";
 $conf['transparent start']  = 0;
 
 # CSS-Styles
-$conf['color header']     = "#aaaaaa";
-$conf['color background'] = "#eaeaea";
-$conf['color h1']         = "#eeeeee";
+$conf['color header']     = "";
+$conf['color background'] = "";
+$conf['color h1']         = "";
