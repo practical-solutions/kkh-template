@@ -4,4 +4,4 @@ email    practical@medizin-lernen.de
 date     2020-11-19
 name     KKH Template
 desc     Configurable template based on the standard dokuwiki-template.
-url      https://github.com/practical-solutions/kkh-template
+url      https://www.dokuwiki.org/template:kkh
