@@ -1,4 +1,4 @@
-base     dokuwiki_kkh
+base     kkh
 author   Gero Gothe
 email    practical@medizin-lernen.de
 date     2020-11-19
