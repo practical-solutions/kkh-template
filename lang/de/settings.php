@@ -16,3 +16,5 @@ $meta['logo link']          = "Ziel-URL für das Logo im Header-Bereich";
 $lang['color header']     = "Color of the header area (css)<br>e.g. <code>rgb(200,200,200,1)</code>";
 $lang['color background'] = "Background-color or image-url (css)<br>e.g. <code>rgb(200,200,200,1)<br>url(https://test.com/test.png)</code>";
 $lang['color h1']         = "Color of h1-tag in the content area (css)<br>e.g. <code>rgb(200,200,200,1)</code>";
+
+$lang['css plugin button']  = "CSS-Vorlagen des Templates für das <b>Button-Plugin</b> verwenden.";

@@ -16,3 +16,6 @@ $meta['logo link']          = array('string');
 $meta['color header']     = array('string');
 $meta['color background'] = array('string');
 $meta['color h1']         = array('string');
+
+# Plugin CSS Modifications
+$meta['css plugin button']  = array('onoff');

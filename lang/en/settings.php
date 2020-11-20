@@ -16,3 +16,5 @@ $lang['logo link']          = "Set link target for logo image. Leave empty to li
 $lang['color header']     = "Color of the header area (css)<br>e.g. <code>rgb(200,200,200,1)</code>";
 $lang['color background'] = "Background-color or image-url (css)<br>e.g. <code>rgb(200,200,200,1)<br>url(https://test.com/test.png)</code>";
 $lang['color h1']         = "Color of h1-tag in the content area (css)<br>e.g. <code>rgb(200,200,200,1)</code>";
+
+$lang['css plugin button']  = "Use template css for the button-plugin";

@@ -37,7 +37,7 @@ if ($conf['tpl']['kkh']['color header'] == '') $conf['tpl']['kkh']['color header
     <?php tpl_includeFile('meta.html') ?>
     
     <!-- Anpassung Grünstadt -->
-	<link rel="stylesheet" type="text/css" href="<?php echo tpl_basedir(); ?>/css/kkh.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo tpl_basedir(); ?>css/kkh.css">
     <style>
     html {
         <?php if (isset($conf['tpl']['kkh']['color background'])) echo "background: ".$conf['tpl']['kkh']['color background'].";";?>
@@ -61,17 +61,14 @@ if ($conf['tpl']['kkh']['color header'] == '') $conf['tpl']['kkh']['color header
     .home.mode_show #dokuwiki__content .page.group {
         background:none;border:none;box-shadow:none;
     }
-
-    .home .plugin_button{
-        border:none;
-        transform: none;
-        margin-right:20px;
-        margin-top:30px;
-        width:9em;
-    }
     
     .home #plugin__approve {display:none;}
     <?php endif; ?>
+    
+    <?php 
+    # Styles for the button plugin
+    if ($conf['tpl']['kkh']['css plugin button']===1) echo file_get_contents(DOKU_TPLINC.'css/plugins/button.css');
+    ?>
     
     </style>
 	<!------------------------->

@@ -16,3 +16,5 @@ $conf['logo link']          = "";
 $conf['color header']     = "";
 $conf['color background'] = "";
 $conf['color h1']         = "";
+
+$conf['css plugin button']  = 0;
