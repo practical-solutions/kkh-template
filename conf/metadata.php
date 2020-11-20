@@ -10,6 +10,7 @@ $meta['slider text']  = array('string');
 $meta['slider link']  = array('string');
 
 $meta['transparent start']  = array('onoff');
+$meta['logo link']          = array('string');
 
 # CSS-Styles
 $meta['color header']     = array('string');

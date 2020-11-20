@@ -10,6 +10,7 @@ $lang['slider text']  = "Text for slider link";
 $lang['slider link']  = "Target-URL for slider link";
 
 $lang['transparent start']  = "Make content area on the <code>start</code>-Page transparent";
+$meta['logo link']          = "Ziel-URL für das Logo im Header-Bereich";
 
 # CSS-Styles
 $lang['color header']     = "Color of the header area (css)<br>e.g. <code>rgb(200,200,200,1)</code>";

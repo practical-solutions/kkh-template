@@ -26,8 +26,9 @@ if (!defined('DOKU_INC')) die();
 			if ($conf['tpl']['kkh']['logo_image'] != "") $logo = DOKU_URL."lib/exe/fetch.php?media=".$conf['tpl']['kkh']['logo_image'];
 
             // display logo and wiki title in a link to the home page
+            if ($conf['tpl']['kkh']['logo link'] == '') $conf['tpl']['kkh']['logo link'] = wl();
             tpl_link(
-                wl(),
+                $conf['tpl']['kkh']['logo link'],
                 '<img src="'.$logo.'" alt="" /> <span>'.$conf['title'].'</span>',
                 'accesskey="h" title="[H]"'
             );

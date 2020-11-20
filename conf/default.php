@@ -10,6 +10,7 @@ $conf['slider text']  = "";
 $conf['slider link']  = "";
 
 $conf['transparent start']  = 0;
+$conf['logo link']          = "";
 
 # CSS-Styles
 $conf['color header']     = "";
