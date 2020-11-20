@@ -29,9 +29,10 @@ if (!defined('DOKU_INC')) die();
             if ($conf['tpl']['kkh']['logo link'] == '') $conf['tpl']['kkh']['logo link'] = wl();
             tpl_link(
                 $conf['tpl']['kkh']['logo link'],
-                '<img src="'.$logo.'" alt="" /> <span>'.$conf['title'].'</span>',
+                '<img src="'.$logo.'" alt="" /> ',
                 'accesskey="h" title="[H]"'
             );
+            echo '<a href="'.wl().'"><span>'.$conf['title'].'</span></a>';
         ?></h1>
         <?php if ($conf['tagline']): ?>
             <p class="claim"><?php echo $conf['tagline']; ?></p>
