@@ -9,6 +9,7 @@ $meta['slider show']  = array('onoff');
 $meta['slider text']  = array('string');
 $meta['slider link']  = array('string');
 
+$meta['hide search']  = array('onoff');
 $meta['transparent start']  = array('onoff');
 $meta['logo link']          = array('string');
 

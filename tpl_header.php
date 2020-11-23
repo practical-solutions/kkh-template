@@ -67,9 +67,9 @@ if (!defined('DOKU_INC')) die();
             <!-- Suche-Formular entfernt und mit AddNew-Page-Zeile ersetzt -->
             <?php 
 				$list = plugin_list();
-				if(in_array('addnewpage',$list)) {
+				if(in_array('addnewpage',$list) && $conf['tpl']['kkh']['hide search']===1) {
                     echo p_render('xhtml',p_get_instructions('{{NEWPAGE}}'),$info);
-                } else echo " ";
+                } elseif ($conf['tpl']['kkh']['hide search']==0) tpl_searchform();
 			?>	
             <!------------------------->
             

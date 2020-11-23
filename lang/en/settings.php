@@ -9,6 +9,7 @@ $lang['slider show']  = "Show slider";
 $lang['slider text']  = "Text for slider link";
 $lang['slider link']  = "Target-URL for slider link";
 
+$lang['hide search']  = "Hide search bar in header area.";
 $lang['transparent start']  = "Make content area on the <code>start</code>-Page transparent";
 $lang['logo link']          = "Set link target for logo image. Leave empty to link to <code>start</code>";
 

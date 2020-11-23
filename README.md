@@ -34,7 +34,7 @@ Tested with
 
 ## Issues / Ideas
 
-* Add styles for the [button plugin](https://www.dokuwiki.org/plugin:button)
+None at present
 
 ## License
 
