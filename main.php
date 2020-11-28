@@ -65,6 +65,24 @@ if ($conf['tpl']['kkh']['color header'] == '') $conf['tpl']['kkh']['color header
     .home #plugin__approve {display:none;}
     <?php endif; ?>
     
+    <?php if ($conf['tpl']['kkh']['animation']===1): ?>
+    .nohome #dokuwiki__site .mode_show #dokuwiki__content .pad .group {
+        animation: rollin 0.7s forwards;
+        position:relative;
+        left:100vw;	
+        animation-delay:0.9s;
+    }
+    
+    .startpage #dokuwiki__site .mode_show #dokuwiki__content .pad .group {
+        animation: fadein 1.1s forwards;
+    }
+    
+    .nohome .pageId, .nohome #dokuwiki__pagetools {
+        visibility:hidden;
+        animation:visiblein 1.7s forwards;
+    }
+    <?php endif; ?>
+    
     <?php 
     # Styles for the button plugin
     if ($conf['tpl']['kkh']['css plugin button']===1) echo file_get_contents(DOKU_TPLINC.'css/plugins/button.css');

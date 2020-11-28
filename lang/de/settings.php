@@ -10,6 +10,7 @@ $lang['slider text']  = "Text for slider link";
 $lang['slider link']  = "Target-URL for slider link";
 
 $lang['hide search']  = "Suchleiste im Kopfbereich verbergen.";
+$lang['animation']    = "CSS-Animation beim Laden der Seiten verwenden";
 $lang['transparent start']  = "Make content area on the <code>start</code>-Page transparent";
 $lang['logo link']          = "Ziel-URL für das Logo im Header-Bereich";
 

@@ -10,6 +10,7 @@ $conf['slider text']  = "";
 $conf['slider link']  = "";
 
 $conf['hide search']  = 0;
+$conf['animation']    = 0;
 $conf['transparent start']  = 0;
 $conf['logo link']          = "";
 
