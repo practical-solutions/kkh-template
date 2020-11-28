@@ -18,6 +18,10 @@ Template based on the standard Dokuwiki-Template
 * Content-Area can be set to transparent for the initial ``start``-Page
 * added ``transparent`` as second tag for ``box`` for der [wrap](https://www.dokuwiki.org/plugin:wrap)-Plugin to be used on transparent start pages, e.g. ``<WRAP box transparent 500px>Some content</WRAP>``
 
+![](images/screenshots/sceenshot1.png)
+
+![](images/screenshots/sceenshot2.png)
+
 ![](images/screenshots/screenshot3.png)
 
 ![](images/screenshots/screenshot4.png)
