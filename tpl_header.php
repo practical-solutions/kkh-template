@@ -15,10 +15,6 @@ if (!defined('DOKU_INC')) die();
     <?php tpl_includeFile('header.html') ?>
 
     <div class="headings group">
-        <ul class="a11y skip">
-            <li><a href="#dokuwiki__content"><?php echo $lang['skip_to_content']; ?></a></li>
-        </ul>
-
         <h1 class="kkh_template_title"><?php
             // get logo either out of the template images folder or data/media folder
             $logoSize = array();
