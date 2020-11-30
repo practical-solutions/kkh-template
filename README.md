@@ -5,18 +5,30 @@ Template based on the standard Dokuwiki-Template
 
 ## Features
 
+### Basis CSS changes
+
 * Font-sizes increased
 * Width increased
 * H1-headers (in the content area) with modified style (color configurable)
+
+### Additional styles
 * Animation when loading pages (configurable)
+* Content-Area can be set to transparent for the initial ``start``-Page
+
+### Plugin Integrations
+
 * Integration of the [addnewpage](https://www.dokuwiki.org/plugin:addnewpage)-Plugin
 * Style-Modifications for the [Approve-Plugin](https://www.dokuwiki.org/plugin:approve)
 * Style-Modifications for the [Button-Plugin](https://www.dokuwiki.org/plugin:button)
+* added ``transparent`` as second tag for ``box`` for der [wrap](https://www.dokuwiki.org/plugin:wrap)-Plugin to be used on transparent start pages, e.g. ``<WRAP box transparent 500px>Some content</WRAP>``
+
+### Configuration options
+
 * Colors for header-area can be set
 * Color (or optional: image) for page background can be set
 * Configurable slider for an external link
-* Content-Area can be set to transparent for the initial ``start``-Page
-* added ``transparent`` as second tag for ``box`` for der [wrap](https://www.dokuwiki.org/plugin:wrap)-Plugin to be used on transparent start pages, e.g. ``<WRAP box transparent 500px>Some content</WRAP>``
+* Hide the search bar in the header area
+* Set a link target for the logo which can differ from the link target of the title
 
 ![](images/screenshots/sceenshot1.png)
 
@@ -36,9 +48,6 @@ Tested with
 * [Addnewpage-Plugin](https://www.dokuwiki.org/plugin:addnewpage) / **2015-11-02**
 * [Approve-Plugin](https://www.dokuwiki.org/plugin:approve) / **2020-09-21**
 
-## Issues / Ideas
-
-None at present
 
 ## License
 
